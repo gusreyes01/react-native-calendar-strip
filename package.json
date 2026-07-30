@@ -25,9 +25,11 @@
     "example": "example"
   },
   "scripts": {
-    "eslint": "eslint src/**/*.js __tests__/**/*.js; exit 0",
+    "lint": "eslint src __tests__ --ext .js",
+    "eslint": "npm run lint",
     "format": "prettier-standard \"{src,__tests__}/**/*.js\"",
-    "test": "npm run format && jest",
+    "test": "jest --runInBand",
+    "check": "npm run lint && npm test",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch",
     "contributors:add": "./node_modules/.bin/all-contributors add",
@@ -55,9 +57,10 @@
     "jest": "^22.0.3",
     "prettier-standard": "^8.0.0",
     "react-addons-test-utils": "^15.6.2",
-    "react-dom": "^16.2.0",
+    "react": "16.2.0",
+    "react-dom": "16.2.1",
     "react-native": "^0.51.0",
-    "react-test-renderer": "^16.2.0"
+    "react-test-renderer": "16.2.0"
   },
   "keywords": [
     "RN",

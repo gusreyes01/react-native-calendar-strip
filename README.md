@@ -1,4 +1,11 @@
 <h1 align="center"> react-native-calendar-strip </h1>
+
+> [!IMPORTANT]
+> This fork preserves the 2.0.3 API and its React Native 0.51-era development
+> toolchain. The library is maintained for compatibility, but the example and
+> development dependencies are end-of-life. Review
+> [SECURITY.md](SECURITY.md) before adopting it in a new application.
+
 <div align="center">
   <strong> Easy to use and visually stunning calendar component for React Native.</strong>
 </div>
