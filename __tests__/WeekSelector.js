@@ -116,7 +116,7 @@ describe("WeekSelector Image Component ", () => {
     const styles = imageComponent.props().style;
 
     // REM the opacity is applied by default
-    expect(_.filter(styles)).toHaveLength(2);
+    expect(_.filter(styles)).toHaveLength(3);
     expect(styles[0]).toEqual(defaultStyles.icon);
   });
 
@@ -133,7 +133,7 @@ describe("WeekSelector Image Component ", () => {
     const finalStyle = _.findLast(styles, "backgroundColor");
 
     // REM the opacity is applied by default
-    expect(_.filter(styles)).toHaveLength(3);
+    expect(_.filter(styles)).toHaveLength(4);
     expect(finalStyle).not.toBeNull();
     expect(finalStyle.backgroundColor).toEqual("red");
     expect(toJson(component)).toMatchSnapshot();
@@ -153,7 +153,7 @@ describe("WeekSelector Image Component ", () => {
     const finalStyle = _.findLast(styles, "backgroundColor");
 
     // REM the opacity is applied by default
-    expect(_.filter(styles)).toHaveLength(4);
+    expect(_.filter(styles)).toHaveLength(5);
     expect(finalStyle).not.toBeNull();
     expect(finalStyle.backgroundColor).toEqual("blue");
     expect(toJson(component)).toMatchSnapshot();

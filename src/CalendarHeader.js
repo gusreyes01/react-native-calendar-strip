@@ -59,11 +59,11 @@ class CalendarHeader extends Component {
       )}`;
     }
 
-    return `${
-      monthFormatting.length > 1 ? firstDay.format(monthFormatting) : ""
-    } ${monthFormatting.length > 1 ? "/" : ""} ${lastDay.format(
-      calendarHeaderFormat
-    )}`;
+    const firstMonth = monthFormatting
+      ? `${firstDay.format(monthFormatting)} / `
+      : "";
+
+    return `${firstMonth}${lastDay.format(calendarHeaderFormat)}`;
   }
 
   render() {

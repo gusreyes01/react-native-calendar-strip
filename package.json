@@ -25,7 +25,7 @@
     "example": "example"
   },
   "scripts": {
-    "lint": "eslint src __tests__ --ext .js",
+    "lint": "eslint src __tests__ jest.setup.js --ext .js",
     "eslint": "npm run lint",
     "format": "prettier-standard \"{src,__tests__}/**/*.js\"",
     "test": "jest --runInBand",
@@ -89,7 +89,10 @@
       "!example/*.js"
     ],
     "collectCoverage": false,
-    "setupTestFrameworkScriptFile": "./__tests__/setup.js",
+    "setupTestFrameworkScriptFile": "./jest.setup.js",
+    "moduleNameMapper": {
+      "\\.(bmp|gif|jpg|jpeg|png|psd|svg|webp)$": "<rootDir>/__mocks__/fileMock.js"
+    },
     "globals": {
       "__DEV__": true
     }

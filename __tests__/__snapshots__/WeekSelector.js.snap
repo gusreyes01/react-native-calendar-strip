@@ -4,11 +4,11 @@ exports[`WeekSelector Component should be disabled 1`] = `
 <TouchableOpacity
   activeOpacity={0.2}
   disabled={true}
-  focusedOpacity={0.7}
   style={
     Array [
       Object {
         "alignItems": "center",
+        "alignSelf": "center",
         "justifyContent": "center",
       },
       undefined,
@@ -20,9 +20,11 @@ exports[`WeekSelector Component should be disabled 1`] = `
     style={
       Array [
         Object {
-          "height": 20,
           "resizeMode": "contain",
-          "width": 20,
+        },
+        Object {
+          "height": undefined,
+          "width": undefined,
         },
         undefined,
         undefined,
@@ -39,11 +41,11 @@ exports[`WeekSelector Component should have a custom container style of color re
 <TouchableOpacity
   activeOpacity={0.2}
   disabled={false}
-  focusedOpacity={0.7}
   style={
     Array [
       Object {
         "alignItems": "center",
+        "alignSelf": "center",
         "justifyContent": "center",
       },
       Object {
@@ -57,9 +59,11 @@ exports[`WeekSelector Component should have a custom container style of color re
     style={
       Array [
         Object {
-          "height": 20,
           "resizeMode": "contain",
-          "width": 20,
+        },
+        Object {
+          "height": undefined,
+          "width": undefined,
         },
         undefined,
         undefined,
@@ -76,12 +80,18 @@ exports[`WeekSelector Component should have onPress event 1`] = `
 <TouchableOpacity
   activeOpacity={0.2}
   disabled={false}
-  focusedOpacity={0.7}
-  onPress={[Function]}
+  onPress={
+    [MockFunction] {
+      "calls": Array [
+        Array [],
+      ],
+    }
+  }
   style={
     Array [
       Object {
         "alignItems": "center",
+        "alignSelf": "center",
         "justifyContent": "center",
       },
       undefined,
@@ -93,9 +103,11 @@ exports[`WeekSelector Component should have onPress event 1`] = `
     style={
       Array [
         Object {
-          "height": 20,
           "resizeMode": "contain",
-          "width": 20,
+        },
+        Object {
+          "height": undefined,
+          "width": undefined,
         },
         undefined,
         undefined,
@@ -112,11 +124,11 @@ exports[`WeekSelector Component should render without issues 1`] = `
 <TouchableOpacity
   activeOpacity={0.2}
   disabled={false}
-  focusedOpacity={0.7}
   style={
     Array [
       Object {
         "alignItems": "center",
+        "alignSelf": "center",
         "justifyContent": "center",
       },
       undefined,
@@ -128,9 +140,11 @@ exports[`WeekSelector Component should render without issues 1`] = `
     style={
       Array [
         Object {
-          "height": 20,
           "resizeMode": "contain",
-          "width": 20,
+        },
+        Object {
+          "height": undefined,
+          "width": undefined,
         },
         undefined,
         undefined,
@@ -147,11 +161,11 @@ exports[`WeekSelector Image Component  should be disabled with opacity 0 1`] = `
 <TouchableOpacity
   activeOpacity={0.2}
   disabled={true}
-  focusedOpacity={0.7}
   style={
     Array [
       Object {
         "alignItems": "center",
+        "alignSelf": "center",
         "justifyContent": "center",
       },
       undefined,
@@ -163,9 +177,11 @@ exports[`WeekSelector Image Component  should be disabled with opacity 0 1`] = `
     style={
       Array [
         Object {
-          "height": 20,
           "resizeMode": "contain",
-          "width": 20,
+        },
+        Object {
+          "height": undefined,
+          "width": undefined,
         },
         undefined,
         undefined,
@@ -182,11 +198,11 @@ exports[`WeekSelector Image Component  should have custom icon instance style of
 <TouchableOpacity
   activeOpacity={0.2}
   disabled={false}
-  focusedOpacity={0.7}
   style={
     Array [
       Object {
         "alignItems": "center",
+        "alignSelf": "center",
         "justifyContent": "center",
       },
       undefined,
@@ -198,9 +214,11 @@ exports[`WeekSelector Image Component  should have custom icon instance style of
     style={
       Array [
         Object {
-          "height": 20,
           "resizeMode": "contain",
-          "width": 20,
+        },
+        Object {
+          "height": undefined,
+          "width": undefined,
         },
         Object {
           "backgroundColor": "red",
@@ -221,11 +239,11 @@ exports[`WeekSelector Image Component  should have custom icon style of backgrou
 <TouchableOpacity
   activeOpacity={0.2}
   disabled={false}
-  focusedOpacity={0.7}
   style={
     Array [
       Object {
         "alignItems": "center",
+        "alignSelf": "center",
         "justifyContent": "center",
       },
       undefined,
@@ -237,9 +255,11 @@ exports[`WeekSelector Image Component  should have custom icon style of backgrou
     style={
       Array [
         Object {
-          "height": 20,
           "resizeMode": "contain",
-          "width": 20,
+        },
+        Object {
+          "height": undefined,
+          "width": undefined,
         },
         Object {
           "backgroundColor": "red",
@@ -258,11 +278,11 @@ exports[`WeekSelector Image Component  should render a custom component 1`] = `
 <TouchableOpacity
   activeOpacity={0.2}
   disabled={false}
-  focusedOpacity={0.7}
   style={
     Array [
       Object {
         "alignItems": "center",
+        "alignSelf": "center",
         "justifyContent": "center",
       },
       undefined,
@@ -291,11 +311,11 @@ exports[`WeekSelector Image Component  should render a custom component that is 
 <TouchableOpacity
   activeOpacity={0.2}
   disabled={true}
-  focusedOpacity={0.7}
   style={
     Array [
       Object {
         "alignItems": "center",
+        "alignSelf": "center",
         "justifyContent": "center",
       },
       undefined,
