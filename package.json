@@ -51,6 +51,7 @@
     "babel-preset-react-native": "^4.0.0",
     "cheerio": "1.0.0-rc.10",
     "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "1.1.1",
     "enzyme-to-json": "^3.3.0",
     "eslint": "^4.13.1",
     "eslint-plugin-import": "^2.7.0",
@@ -88,6 +89,7 @@
       "!example/*.js"
     ],
     "collectCoverage": false,
+    "setupTestFrameworkScriptFile": "./__tests__/setup.js",
     "globals": {
       "__DEV__": true
     }

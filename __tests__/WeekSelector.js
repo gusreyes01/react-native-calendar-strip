@@ -10,6 +10,8 @@ import _ from "lodash";
 import WeekSelector from "../src/WeekSelector";
 import defaultStyles from "../src/Calendar.style.js";
 
+const leftArrow = require("../src/img/left-arrow-black.png");
+
 const genDatesForWeek = startDate => {
   const day = moment(startDate);
   return _.map(_.range(7), i => day.clone().add(i, "days"));
@@ -18,7 +20,7 @@ const genDatesForWeek = startDate => {
 describe("WeekSelector Component", () => {
   it("should render without issues", () => {
     const component = shallow(
-      <WeekSelector imageSource={require("./img/left-arrow-black.png")} />
+      <WeekSelector imageSource={leftArrow} />
     );
 
     expect(component.length).toBe(1);
@@ -29,7 +31,7 @@ describe("WeekSelector Component", () => {
     const onPress = jest.fn();
     const component = shallow(
       <WeekSelector
-        imageSource={require("./img/left-arrow-black.png")}
+        imageSource={leftArrow}
         onPress={onPress}
       />
     );
@@ -41,7 +43,7 @@ describe("WeekSelector Component", () => {
 
   it("should have the default container style", () => {
     const component = shallow(
-      <WeekSelector imageSource={require("./img/left-arrow-black.png")} />
+      <WeekSelector imageSource={leftArrow} />
     );
 
     const styles = component.props().style;
@@ -54,7 +56,7 @@ describe("WeekSelector Component", () => {
     const component = shallow(
       <WeekSelector
         iconContainerStyle={{ color: "red" }}
-        imageSource={require("./img/left-arrow-black.png")}
+        imageSource={leftArrow}
       />
     );
 
@@ -70,7 +72,7 @@ describe("WeekSelector Component", () => {
 
     const component = shallow(
       <WeekSelector
-        imageSource={require("./img/left-arrow-black.png")}
+        imageSource={leftArrow}
         controlDate={moment("2018-01-08")}
         weekEndDate={datesForWeek[datesForWeek.length - 1]}
         weekStartDate={datesForWeek[0]}
@@ -84,7 +86,7 @@ describe("WeekSelector Component", () => {
 
     const component = shallow(
       <WeekSelector
-        imageSource={require("./img/left-arrow-black.png")}
+        imageSource={leftArrow}
         controlDate={moment("2018-01-12")}
         weekEndDate={datesForWeek[datesForWeek.length - 1]}
         weekStartDate={datesForWeek[0]}
@@ -98,7 +100,7 @@ describe("WeekSelector Component", () => {
 describe("WeekSelector Image Component ", () => {
   it("should have render an image", () => {
     const component = shallow(
-      <WeekSelector imageSource={require("./img/left-arrow-black.png")} />
+      <WeekSelector imageSource={leftArrow} />
     );
 
     const imageComponent = component.find(Image);
@@ -107,7 +109,7 @@ describe("WeekSelector Image Component ", () => {
 
   it("should show the default styles", () => {
     const component = shallow(
-      <WeekSelector imageSource={require("./img/left-arrow-black.png")} />
+      <WeekSelector imageSource={leftArrow} />
     );
 
     const imageComponent = component.find(Image);
@@ -122,7 +124,7 @@ describe("WeekSelector Image Component ", () => {
     const component = shallow(
       <WeekSelector
         iconStyle={{ backgroundColor: "red" }}
-        imageSource={require("./img/left-arrow-black.png")}
+        imageSource={leftArrow}
       />
     );
 
@@ -142,7 +144,7 @@ describe("WeekSelector Image Component ", () => {
       <WeekSelector
         iconStyle={{ backgroundColor: "red" }}
         iconInstanceStyle={{ backgroundColor: "blue" }}
-        imageSource={require("./img/left-arrow-black.png")}
+        imageSource={leftArrow}
       />
     );
 
@@ -162,7 +164,7 @@ describe("WeekSelector Image Component ", () => {
 
     const component = shallow(
       <WeekSelector
-        imageSource={require("./img/left-arrow-black.png")}
+        imageSource={leftArrow}
         controlDate={moment("2018-01-08")}
         weekEndDate={datesForWeek[datesForWeek.length - 1]}
         weekStartDate={datesForWeek[0]}
@@ -182,7 +184,7 @@ describe("WeekSelector Image Component ", () => {
 
     const component = shallow(
       <WeekSelector
-        imageSource={require("./img/left-arrow-black.png")}
+        imageSource={leftArrow}
         controlDate={moment("2018-01-12")}
         weekEndDate={datesForWeek[datesForWeek.length - 1]}
         weekStartDate={datesForWeek[0]}
