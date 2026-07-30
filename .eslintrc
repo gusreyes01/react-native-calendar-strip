@@ -13,6 +13,11 @@
         "react",
         "import"
     ],
+    "settings": {
+        "react": {
+            "version": "16.2"
+        }
+    },
     "rules": {
         "import/order": [
             "error"

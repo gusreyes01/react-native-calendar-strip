@@ -13,11 +13,13 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     container:
-      image: node:10-buster
+      image: node:16-bullseye
     env:
       CI: "true"
     steps:
       - uses: actions/checkout@v4
+      - name: Use lockfile-compatible npm
+        run: npm install --global npm@6.14.18
       - name: Install locked dependencies
         run: npm ci
       - name: Lint and test
